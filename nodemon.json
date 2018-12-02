@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "watch": ["bin/*"],
+  "ignore":["src/*"],
+  "delay":3000,
+  "exec":"node bin/server.js"
+}

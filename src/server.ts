@@ -1,11 +1,11 @@
-import express from 'express';
+import * as express from 'express';
 
 import {WelcomeController} from './controllers';
 
 const app: express.Application = express();
-const port: number = process.env.PORT || 3000;
+const port = 3000 || process.env.PORT;
 
-app.use('/welcome', WelcomeController);
+app.use('/', WelcomeController); 
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}/`);
