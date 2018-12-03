@@ -14,6 +14,5 @@
       "./src/**/*"
   ],
   "exclude": [
-      "/mnt/d/projects/slack_unfurl/express-ts/node_modules",
   ]
 }

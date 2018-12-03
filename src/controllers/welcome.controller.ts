@@ -7,9 +7,8 @@ router.get('/', (req: Request, res: Response) => {
     res.send('Hello, World!');
 });
 
-router.post('/', (req: Request, res: Response)=> {
-    console.log(req.body);
-    res.send('hi');
+router.post('/test', (req: Request, res: Response)=> {
+    res.send(JSON.stringify(req.body));
 })
 
 router.get('/:name', (req: Request, res: Response) => {
